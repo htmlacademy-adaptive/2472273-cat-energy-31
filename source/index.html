@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body">
+<body class="page">
 
   <!-- Main-header -->
   <header class="header">
@@ -33,13 +33,13 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__list-item">
-              <a class="navigation__list-link--active" href="#">Главная</a>
+              <a class="navigation__list-link navigation__list-link--active" href="#">Главная</a>
             </li>
             <li class="navigation__list-item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="navigation__list-link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="navigation__list-item">
-              <a href="#">Подбор программы</a>
+              <a class="navigation__list-link" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
           <source media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" type="images/png">
           <img class="hero__description-picture" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Питание для кошек Cat Energy">
         </picture>
-        <a class="hero__button button button__primary " href="#" type="button">Подобрать программу</a>
+        <a class="hero__button button button--primary " href="#">Подобрать программу</a>
       </div>
     </section>
     <!-- Services -->
@@ -80,7 +80,7 @@
         </div>
         <div class="services__card">
           <img class="services__card-picture" src="images/cat-pro.svg" width="67" height="28" alt="Кот в движении">
-          <h3 class="services__card-title">Набор массы</h3>
+          <h3 class="services__card-title title-h3">Набор массы</h3>
           <p class="services__card-desription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="services__card-link" href="#">
             <span>Каталог pro</span>
@@ -131,7 +131,6 @@
           <span>15 000 РУБ.</span>
           <span>Затраты на питание:</span>
         </div>
-        </dl>
       </div>
     </section>
     <!-- Contacts -->

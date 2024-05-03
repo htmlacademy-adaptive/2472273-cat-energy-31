@@ -1,3 +1,20 @@
 .contacts {
 
 }
+
+.contacts__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-color-text;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts__wrapper-catalog {
+  background-color: $bg-base;
+}
+
