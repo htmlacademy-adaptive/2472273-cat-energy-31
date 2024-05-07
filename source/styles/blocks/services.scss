@@ -2,9 +2,58 @@
   background-color: $bg-base;
 }
 
+.services__card--slim::before {
+  content: "";
+  display: block;
+  background-image: url("../../images/cat-slim.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+}
+
+.services__card--pro::before {
+  content: "";
+  display: block;
+  background-image: url("../../images/cat-pro.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+}
+
 .services__card-title {
   font-size: 24px;
   line-height: 37px;
   color: $black;
+  text-transform: uppercase;
 }
 
+.services__card-link {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+  display: inline-flex;
+  gap: 15px;
+}
+
+.services__card-link:active {
+  opacity: 30%;
+}
+
+.services__card-link::after {
+  content: "";
+  display: block;
+  mask-image: url("../../icons/stack.svg#arrow-right");
+  width: 24px;
+  height: 12px;
+  mask-position: 0 0;
+  mask-repeat: no-repeat;
+  background-color: $black;
+}
+
+.services__card-link:hover::after {
+  width: 32px;
+}

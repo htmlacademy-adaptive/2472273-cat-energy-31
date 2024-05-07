@@ -1,14 +1,24 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $white;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-tertiary-special;
+  }
+
+  &:active {
+    background-color: $bg-tertiary-special;
+    color: $button-color-active;
+  }
 }
 
 .button--primary {
-  background-color: $bg_basic-button;
+  background-color: $bg-tertiary;
 }
 
 .button--secondary {

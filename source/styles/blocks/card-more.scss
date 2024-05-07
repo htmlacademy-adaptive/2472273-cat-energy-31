@@ -1,11 +1,30 @@
 .card-more__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $secondary-color-text;
+  text-transform: uppercase;
 }
 
 .card-more__description {
   font-size: 12px;
   line-height: 16px;
+}
+
+.card-more__button:hover {
+  background-color: $bg-secondary-special;
+}
+
+.card-more__button:active {
+  background-color: $bg-secondary-special;
+}
+
+.card-more::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#catalog-card-plus");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
 }

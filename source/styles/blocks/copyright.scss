@@ -2,3 +2,27 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.copyright:active {
+  opacity: 30%;
+}
+
+.copyright::after {
+  content: "";
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  display: block;
+  background-color: $icon-color;
+}
+
+.copyright:hover::after {
+  background-color: $bg-tertiary;
+}
+
+.copyright:active::after {
+  background-color: $bg-tertiary;
+  opacity: 30%;
+}

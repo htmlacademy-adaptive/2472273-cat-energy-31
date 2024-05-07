@@ -3,7 +3,32 @@
   line-height: 40px;
 }
 
-.advantages__title {
-  font-size: 36px;
-  line-height: 40px;
+.advantages__item::before {
+  content: "";
+  background-color: $bg-tertiary;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.advantages__item-benefit::before {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 25px 28px;
+}
+
+.advantages__item-view::before {
+  background-image: url("../../icons/stack.svg#glass");
+  background-size: 26px 29px;
+}
+
+.advantages__item-advice::before {
+  background-image: url("../../icons/stack.svg#fork-and-knife");
+  background-size: 25px 30px;
+}
+
+.advantages__item-result::before {
+  background-image: url("../../icons/stack.svg#clock");
+  background-size: 26px 31px;
 }

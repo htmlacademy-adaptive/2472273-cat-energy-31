@@ -1,5 +1,5 @@
 .additional-products__item-name {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
@@ -9,18 +9,5 @@
 
 .additional-products__item-value,
 .additional-products__item-price {
-  line-height: 14px;
-}
-
-.additional-products__item-name {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  color: $tertiary-color-text;
-  text-transform: uppercase;
-}
-
-.additional-products__item-value, .additional-products__item-price {
   line-height: 14px;
 }

@@ -1,10 +1,23 @@
 .navigation {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-secondary;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
+.navigation__list-item:hover {
+  opacity: 60%;
+}
+
+.navigation__list-item:disabled {
+  opacity: 30%;
+}
+
 .navigation__list-link {
   color: $black;
+}
+
+.navigation__toggle {
+  border: none;
+  background-color: transparent;
 }
