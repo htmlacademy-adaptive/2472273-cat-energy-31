@@ -1,3 +1,6 @@
+@use "variables.scss";
+@use "mixins.scss";
+
 .title-with-line {
   font-size: 24px;
   line-height: 24px;

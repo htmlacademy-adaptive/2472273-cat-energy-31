@@ -1,6 +1,44 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .header {
   font-family: $font-secondary;
   font-size: 20px;
   line-height: 20px;
   color: $black;
+  height: 65px;
+
+  @media (min-width: $tablet-width) {
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 114px;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
 }

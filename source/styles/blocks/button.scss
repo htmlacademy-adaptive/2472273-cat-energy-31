@@ -1,27 +1,40 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .button {
+  display: inline-block;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $white;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
   cursor: pointer;
-
-  &:hover {
-    background-color: $bg-tertiary-special;
-  }
-
-  &:active {
-    background-color: $bg-tertiary-special;
-    color: $button-color-active;
-  }
 }
 
 .button--primary {
-  background-color: $bg-tertiary;
+  background-color: $color-primary;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+
+  &:active {
+    background-color: $color-secondary;
+    color: $button-color-active;
+  }
 }
 
 .button--secondary {
   background-color: $bg-base;
   color: $base-color-text;
+
+  &:hover {
+    background-color: $bg-secondary-special;
+  }
+
+  &:active {
+    background-color: $bg-secondary-special;
+  }
 }

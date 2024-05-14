@@ -1,22 +1,53 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .footer {
   background-color: $bg-base;
 }
 
-.footer__logo::after {
-  content: "";
-  display: block;
-  width: 128px;
-  height: 24px;
-  mask-image: url("../../icons/stack.svg#logo-text");
-  mask-position: center;
-  mask-repeat: no-repeat;
-  background-color: $secondary-color-text;
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.footer__logo:hover::after {
-  background-color: $base-color-text-special;
+.footer__logo {
+  &::after {
+    content: "";
+    display: block;
+    width: 128px;
+    height: 24px;
+    mask-image: url("../../icons/stack.svg#logo-text");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $secondary-color-text;
+  }
+
+  &:hover::after {
+    background-color: $base-color-text-special;
+  }
+
+  &:active::after {
+    background-color: $base-color-text-active;
+  }
+
+  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+    width: 128px;
+  }
 }
 
-.footer__logo:active::after {
-  background-color: $base-color-text-active;
+.footer__social {
+  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+    width: 132px;
+  }
+}
+
+.footer__copyright {
+  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+    width: 168px;
+  }
 }

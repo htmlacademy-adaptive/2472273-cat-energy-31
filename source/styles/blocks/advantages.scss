@@ -1,11 +1,33 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
+  }
+}
+
 .advantages__title {
-  font-size: 36px;
   line-height: 40px;
+  color: $black;
 }
 
 .advantages__item::before {
   content: "";
-  background-color: $bg-tertiary;
+  background-color: $color-primary;
   background-position: center;
   background-repeat: no-repeat;
   width: 60px;
@@ -13,22 +35,22 @@
   display: block;
 }
 
-.advantages__item-benefit::before {
+.advantages__item--benefit::before {
   background-image: url("../../icons/stack.svg#leaf");
   background-size: 25px 28px;
 }
 
-.advantages__item-view::before {
+.advantages__item--view::before {
   background-image: url("../../icons/stack.svg#glass");
   background-size: 26px 29px;
 }
 
-.advantages__item-advice::before {
+.advantages__item--advice::before {
   background-image: url("../../icons/stack.svg#fork-and-knife");
   background-size: 25px 30px;
 }
 
-.advantages__item-result::before {
+.advantages__item--result::before {
   background-image: url("../../icons/stack.svg#clock");
   background-size: 26px 31px;
 }

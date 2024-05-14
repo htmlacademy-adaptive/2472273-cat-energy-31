@@ -1,12 +1,46 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .example {
   background-color: $bg-secondary;
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-base;
+  }
 }
 
-.example__item-value {
-  font-size: 24px;
-  line-height: 24px;
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__title {
+  line-height: 40px;
   color: $black;
-  text-align: center;
+}
+
+.example__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.example__list-wrapper {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+    grid-template-columns: 162px 162px;
+    gap: 43px;
+  }
 }
 
 .example__total {

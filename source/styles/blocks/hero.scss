@@ -1,4 +1,10 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .hero {
   color: $white;
+}
+
+.hero__description {
   text-transform: uppercase;
 }

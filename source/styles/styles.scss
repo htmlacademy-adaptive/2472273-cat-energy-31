@@ -3,6 +3,7 @@
 @import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
+@import "./common/container.scss";
 @import "./common/title-h1.scss";
 @import "./common/title-h2.scss";
 @import "./common/title-h3.scss";
@@ -14,10 +15,10 @@
 /* BLOCKS */
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/logo.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/card-more.scss";
+@import "./blocks/catalog.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/example.scss";

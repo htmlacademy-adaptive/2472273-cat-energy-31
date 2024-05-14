@@ -1,3 +1,32 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.additional-products__title {
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $black;
+}
+
+.additional-products__wrapper {
+  display: grid;
+  grid-template-columns: 280px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 896px 245px;
+    gap: 80px;
+  }
+}
+
+.additional-products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .additional-products__item-name {
   font-family: $font-secondary;
   font-size: 16px;

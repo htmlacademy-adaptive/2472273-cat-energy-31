@@ -1,3 +1,6 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .product-card__title {
   font-family: $font-secondary;
   font-size: 16px;
@@ -7,7 +10,11 @@
 }
 
 .product-card__list {
-  font-family: $font-primary;
   font-size: 12px;
   line-height: 16px;
+}
+
+.product-card__link-title {
+  font-family: $font-secondary;
+  text-decoration: none;
 }

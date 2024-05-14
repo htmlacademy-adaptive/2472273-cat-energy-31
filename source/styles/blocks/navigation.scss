@@ -1,8 +1,25 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .navigation {
   font-family: $font-secondary;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
 }
 
 .navigation__list-item:hover {
@@ -15,9 +32,18 @@
 
 .navigation__list-link {
   color: $black;
+  text-decoration: none;
 }
 
 .navigation__toggle {
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
