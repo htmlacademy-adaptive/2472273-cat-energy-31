@@ -2,9 +2,26 @@
 @use "../common/variables.scss";
 
 .social {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
   list-style-type: none;
+  border-bottom: 1px solid $border-color-tertiary;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+  }
+}
+
+.social__item {
+  margin-right: 24px;
 }
 
 .social__link::after {

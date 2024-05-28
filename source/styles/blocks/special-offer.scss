@@ -24,6 +24,7 @@
   line-height: 20px;
   text-align: center;
   color: $white;
+  margin: 0;
 }
 
 .special-offer::before {
@@ -35,4 +36,5 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transform: translate(101px, 58px);
 }

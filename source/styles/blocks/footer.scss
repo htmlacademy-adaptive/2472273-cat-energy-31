@@ -8,18 +8,31 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 40px 20px;
 
-  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 55px 20px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 66px 25px 66px 30px;
   }
 }
 
 .footer__logo {
+  display: block;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $border-color-tertiary;
+
   &::after {
     content: "";
     display: block;
-    width: 128px;
     height: 24px;
     mask-image: url("../../icons/stack.svg#logo-text");
     mask-position: center;
@@ -35,8 +48,11 @@
     background-color: $base-color-text-active;
   }
 
-  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+  @media (min-width: $tablet-width) {
     width: 128px;
+    padding: 0;
+    margin: 0;
+    border: none;
   }
 }
 
