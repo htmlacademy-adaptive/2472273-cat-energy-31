@@ -24,6 +24,10 @@
     background-color: $color-secondary;
     color: $button-color-active;
   }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 .button--secondary {
@@ -36,5 +40,9 @@
 
   &:active {
     background-color: $bg-secondary-special;
+  }
+
+  &:disabled {
+    opacity: 30%;
   }
 }

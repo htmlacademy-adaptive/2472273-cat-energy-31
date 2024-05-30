@@ -88,6 +88,10 @@
     outline: none;
     border: 2px solid $base-color-text;
   }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 .subscribe__input--error {

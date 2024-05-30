@@ -7,6 +7,9 @@
   <title>Cat Energy</title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="../source/fonts/oswald/oswaldregular.woff2" as="font">
+  <link rel="preload" href="../source/fonts/lato/Lato-Regular.woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
   <link rel="icon" href="favicon.ico">
@@ -18,7 +21,7 @@
 <body class="page">
 
   <!-- Main-header -->
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="header__container container">
       <a class="header__logo" href="#">
         <picture>
@@ -49,7 +52,7 @@
   <!-- Main-container -->
   <main class="main">
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="hero__wrapper container">
         <div class="hero__wrapper-content">
           <h1 class="hero__title title-h1">Функциональное
@@ -65,7 +68,7 @@
       </div>
     </section>
     <!-- Services -->
-    <section class="services">
+    <section class="services" data-test="programs">
       <div class="services__wrapper container">
         <h2 class="visually-hidden">Преимущества продукции</h2>
         <div class="services__card services__card--slim">
@@ -85,7 +88,7 @@
       </div>
     </section>
     <!-- Advantages -->
-    <section class="advantages">
+    <section class="advantages" data-test="features">
       <div class="advantages__wrapper container">
         <h2 class="advantages__title title-h1">Как это работает</h2>
         <ul class="advantages__list">
@@ -105,7 +108,7 @@
       </div>
     </section>
     <!-- Example -->
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="example__wrapper container">
         <h2 class="example__title title-h1">Живой пример</h2>
         <div class="example__wrapper-content">
@@ -152,7 +155,7 @@
       </div>
     </section>
     <!-- Contacts -->
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="contacts__wrapper container">
         <h2 class="visually-hidden">Адрес Cat Energy</h2>
         <div class="contacts__text">
@@ -182,7 +185,7 @@
     </section>
   </main>
   <!-- Main footer -->
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo" href="#">
         <span class="visually-hidden">Logo-shop</span>
@@ -210,7 +213,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
