@@ -18,6 +18,19 @@
   }
 }
 
+.header--catalog {
+  border-bottom: 1px solid $border-color-tertiary;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
+}
+
 .header__container {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +40,7 @@
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +77,10 @@
 
 .header__logo-text {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;

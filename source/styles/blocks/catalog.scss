@@ -11,12 +11,13 @@
 .catalog__title {
   margin: 0;
   color: $black;
-  padding: 27px 20px 41px;
-  border-top: 1px solid $border-color-tertiary;
+  padding: 27px 0 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 0;
+    margin-bottom: 84px;
     border: none;
   }
 

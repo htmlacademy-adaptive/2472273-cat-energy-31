@@ -8,12 +8,14 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding-top: 35px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 20px;
+    padding-top: 54px;
+    padding-bottom: 55px;
     align-items: center;
   }
 

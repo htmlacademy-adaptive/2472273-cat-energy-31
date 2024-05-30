@@ -15,11 +15,11 @@
   border-top: 1px solid $border-color-tertiary-special;
 
   @media (min-width: $tablet-width) {
-    width: 436px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border: none;
+    gap: 5px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,17 +29,13 @@
 }
 
 .navigation__list--open {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100vw;
-  background-color: $white;
-  z-index: 2;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-    width: 436px;
-    background-color: transparent;
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: $white;
+    z-index: 2;
   }
 }
 
@@ -89,7 +85,7 @@
     height: 2px;
     background-color: $color-primary;
     position: absolute;
-    top: 50px;
+    top: 45px;
   }
 
   @media (min-width: $desktop-width) {

@@ -4,17 +4,20 @@
 .services__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 49px;
+    gap: 33px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
-    margin-bottom: 71px;
+    margin-bottom: 0;
+    padding-bottom: 75px;
+    padding-top: 82px;
   }
 }
 
@@ -79,8 +82,12 @@
   background-image: url("../../images/cat-pro.svg");
   width: 67px;
   height: 50px;
+  top: 29px;
+  left: 12px;
 
   @media (min-width: $tablet-width) {
+    left: auto;
+    top: 97px;
     right: 29px;
     background-size: 268px 200px;
     width: 268px;
@@ -114,21 +121,35 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
     text-align: center;
     padding-left: 33px;
   }
 }
 
 .services__card-title--slim {
+  margin: 10px 0 28px 70px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 22px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 33px;
+    margin: 0 0 73px;
   }
 }
 
 .services__card-title--pro {
+  margin: 12px 0 30px 71px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 75px;
+    margin: 0 0 73px;
   }
 }
 
@@ -145,6 +166,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    gap: 25px;
   }
 }
 
@@ -155,10 +177,11 @@
 .services__card-link::after {
   content: "";
   display: block;
+  align-self: center;
   mask-image: url("../../icons/stack.svg#arrow-right");
-  width: 32px;
+  width: 60px;
   height: 10px;
-  mask-size: 28px 10px;
+  mask-size: 45px, 12px;
   mask-repeat: no-repeat;
   mask-position: -8px center;
   background-color: $black;
@@ -174,7 +197,7 @@
   border-bottom: 1px solid $border-color-tertiary;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     padding: 0;
     font-size: 16px;
     line-height: 24px;

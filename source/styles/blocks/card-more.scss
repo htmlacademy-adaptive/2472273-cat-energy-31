@@ -3,20 +3,23 @@
 
 .card-more {
   border-bottom: 1px solid $bg-secondary-special;
+  margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     border: none;
   }
 }
 
 .card-more__text {
   @media (min-width: $tablet-width) {
-    width: 170px;
-    margin: 0 auto 82px;
+    padding: 0 38px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 90px;
+    padding: 0;
   }
 }
 
@@ -29,29 +32,31 @@
   height: 30px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     width: 60px;
     height: 60px;
-    top: 50px;
-    left: 132px;
+    transform: translate(55px, -3px);
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 92px;
+    transform: translate(53px, -2px);
+    margin-bottom: 39px;
   }
 }
 
 .card-more__content {
-  margin-bottom: 17px;
-  padding: 20px 20px 0;
+  margin-bottom: 24px;
+  padding: 24px 20px 0;
   border-top: 1px solid $bg-secondary-special;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 82px 0 0;
-    padding: 145px 37px 40px;
+    padding: 50px 37px 38px;
     border: 2px solid $bg-base;
-    position: relative;
   }
 }
 

@@ -5,7 +5,7 @@
   background-color: $bg-secondary;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient($white 60%, $bg-secondary 55%);
+    background: linear-gradient($white 55%, $bg-secondary 55%);
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +20,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }
 }
@@ -37,7 +41,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 99px;
+    margin-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,6 +59,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,7 +68,7 @@
 }
 
 .example__description {
-  margin: 0 0 20px;
+  margin: 0 0 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -98,9 +103,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-  margin: 0 0 32px;
+  margin: 0 0 35px;
 
-  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 43px;
     margin: 0;
@@ -139,6 +144,11 @@
     font-size: 30px;
     line-height: 37px;
     min-width: 162px;
+    padding: 18px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 10px;
   }
 }
 
@@ -168,7 +178,7 @@
 .example__total {
   font-family: $font-secondary;
   line-height: 20px;
-  margin: 0 0 20px;
+  margin: 0;
   color: $black;
   text-transform: uppercase;
   text-align: center;
@@ -217,6 +227,11 @@
 
 .example__cats {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    margin: 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;

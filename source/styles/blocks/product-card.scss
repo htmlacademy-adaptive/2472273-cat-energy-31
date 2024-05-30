@@ -2,15 +2,14 @@
 @use "../common/variables.scss";
 
 .product-card {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 20px 25px;
   border-top: 1px solid $bg-secondary-special;
-  width: 280px;
+  margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, $white 15%, $bg-base 15%);
-    width: 100%;
     padding: 0 37px 40px;
+    margin: 0;
     border: none;
   }
 
@@ -22,14 +21,14 @@
 
 .product-card__content {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  margin-bottom: 17px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     border: none;
     grid-template-columns: 1fr;
     padding: 0;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
   }
 }
 
@@ -64,6 +63,13 @@
   text-decoration: none;
   width: 76px;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 135px;
+    margin-left: 57px;
+    margin-top: -2px;
+  }
+  
   @media (min-width: $desktop-width) {
     display: block;
     padding: 0 15px;
@@ -113,7 +119,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 }
 
@@ -131,7 +137,7 @@
     height: 1px;
     background-color: $border-color-secondary;
     position: absolute;
-    top: 30px;
+    top: 24px;
   }
 
   @media (min-width: $desktop-width) {
