@@ -68,7 +68,7 @@
 }
 
 .example__description {
-  margin: 0 0 17px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -198,7 +198,7 @@
     justify-content: space-between;
     gap: 63px;
     margin: 0;
-    text-align: left;
+    align-self: start;
   }
 }
 

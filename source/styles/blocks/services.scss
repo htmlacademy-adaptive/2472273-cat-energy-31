@@ -4,7 +4,7 @@
 .services__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -192,7 +192,7 @@
 }
 
 .services__card-description {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
   padding-bottom: 23px;
   border-bottom: 1px solid $border-color-tertiary;
 

@@ -1,13 +1,13 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.additional-products {
-  margin-bottom: 40px;
+// .additional-products {
+//   margin-bottom: 40px;
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 96px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     margin-bottom: 96px;
+//   }
+// }
 
 .additional-products__title {
   font-family: $font-secondary;
@@ -41,7 +41,7 @@
     display: grid;
     grid-template-columns: 896px 245px;
     gap: 80px;
-    margin-bottom: 95px;
+    margin-bottom: 25px;
   }
 }
 
