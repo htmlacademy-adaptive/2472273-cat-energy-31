@@ -29,13 +29,17 @@
           <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-picture-tablet.svg">
           <img class="header__logo-picture" src="images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип магазина Кэт Энерджи">
         </picture>
-        <img class="header__logo-text" src="images/logo-header-text.svg" width="101" height="18" alt="Cat Energy">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 768px)" width="101" height="18" srcset="images/logo-text-tablet.svg">
+          <img class="header__logo-text" src="images/logo-header-text.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+
       </a>
       <nav class="header__navigation navigation">
-        <button class="navigation__toggle navigation__toggle--open navigation__toggle--nojs" type="button">
+        <button class="navigation__toggle navigation__toggle--closed navigation__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list navigation__list--open navigation__list--nojs">
+        <ul class="navigation__list navigation__list--closed navigation__list--nojs">
           <li class="navigation__list-item">
             <a class="navigation__list-link navigation__list-link--active" href="#">Главная</a>
           </li>

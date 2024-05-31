@@ -6,6 +6,11 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .navigation__list {
@@ -19,12 +24,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: none;
-    gap: 5px 38px;
+    gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     min-width: 478px;
+    gap: 30px;
   }
 }
 
@@ -59,13 +65,14 @@
     border: none;
     font-size: 18px;
     line-height: 24px;
-    padding: 16px 0;
+    padding: 18px 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
     color: $white;
+    padding: 18px 0;
   }
 }
 
@@ -85,11 +92,11 @@
     height: 2px;
     background-color: $color-primary;
     position: absolute;
-    top: 45px;
+    top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 52px;
+    top: 55px;
     background-color: $white;
   }
 }

@@ -40,19 +40,19 @@
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 23px;
+    padding-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 52px;
   }
 }
 
 .header__logo {
   display: flex;
   text-decoration: none;
-  justify-content: space-between;
-  flex-grow: 1;
+  gap: 56px;
+  align-items: center;
 
   &:hover {
     opacity: 80%;
@@ -66,7 +66,7 @@
     width: 174px;
     padding: 0;
     margin: 0;
-    flex-grow: 0;
+    gap: 13px;
   }
 
   @media (min-width: $desktop-width) {
