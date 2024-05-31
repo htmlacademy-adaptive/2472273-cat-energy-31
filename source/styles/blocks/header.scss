@@ -1,5 +1,89 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  color: $black;
+  height: 65px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 114px;
+  }
+}
+
+.header--catalog {
+  border-bottom: 1px solid $border-color-tertiary;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  text-decoration: none;
+  gap: 56px;
+  align-items: center;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    padding: 0;
+    margin: 0;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
+
+.header__logo-text {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 118px;
+  }
 }

@@ -1,0 +1,40 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.copyright {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
+
+.copyright:active {
+  opacity: 30%;
+}
+
+.copyright::after {
+  content: "";
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  display: block;
+  background-color: $icon-color;
+}
+
+.copyright:hover::after {
+  background-color: $color-primary;
+}
+
+.copyright:active::after {
+  background-color: $color-primary;
+  opacity: 30%;
+}

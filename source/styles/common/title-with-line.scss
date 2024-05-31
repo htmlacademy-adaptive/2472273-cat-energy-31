@@ -1,0 +1,27 @@
+@use "variables.scss";
+@use "mixins.scss";
+
+.title-with-line {
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  width: fit-content;
+  background-color: $white;
+  box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
+}
+
+.title-with-line::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: $color-primary;
+  box-shadow: 100vw 0 0 0 $color-primary;
+  z-index: -1;
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+  }
+}

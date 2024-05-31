@@ -1,0 +1,191 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
+.advantages__wrapper {
+  margin-bottom: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    border-bottom: 1px solid $border-color-tertiary-special;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 36px 60px;
+    counter-reset: example 0;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding-bottom: 0;
+  }
+}
+
+.advantages__title {
+  margin: 21px 0 41px;
+  line-height: 40px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  max-width: 200px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+  }
+}
+
+.advantages__description:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  background-color: $color-primary;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
+}
+
+.advantages__item--benefit {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    counter-increment: example 1;
+  }
+}
+
+.advantages__item--view {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    counter-increment: example 1;
+  }
+}
+
+.advantages__item--advice {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    counter-increment: example 1;
+  }
+}
+
+.advantages__item--result {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    counter-increment: example 1;
+  }
+}
+
+.advantages__item--benefit::before {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 25px 28px;
+
+  @media (min-width: $tablet-width) {
+    font-style: $font-secondary;
+    top: 40;
+  }
+}
+
+.advantages__item::after {
+  @media (min-width: $tablet-width) {
+    font-family: $font-secondary;
+    position: absolute;
+    top: 0;
+    right: 78px;
+    content: counter(example);
+    color: $bg-base;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: -3;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.advantages__item:first-child::after {
+  @media (min-width: $tablet-width) {
+    right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
+  }
+}
+
+.advantages__item--view::before {
+  background-image: url("../../icons/stack.svg#glass");
+  background-size: 26px 29px;
+
+  @media (min-width: $tablet-width) {
+    top: 40;
+  }
+}
+
+.advantages__item--advice::before {
+  background-image: url("../../icons/stack.svg#fork-and-knife");
+  background-size: 25px 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 40;
+  }
+}
+
+.advantages__item--result::before {
+  background-image: url("../../icons/stack.svg#clock");
+  background-size: 26px 31px;
+
+  @media (min-width: $tablet-width) {
+    top: 40;
+  }
+}
