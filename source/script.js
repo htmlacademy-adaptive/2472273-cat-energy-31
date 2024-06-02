@@ -1,14 +1,7 @@
-const navMain = document.querySelector('.navigation__list');
-const navToggle = document.querySelector('.navigation__toggle');
+const navButton = document.querySelector('.navigationtoggle');
+const navList = document.querySelector('.navigationlist');
+const map = document.querySelector('.contactsmap');
 
-navMain.classList.remove('navigation__list--nojs');
-
-navToggle.addEventListener('click', () => {
-  if (navMain.classList.contains('navigation__list--closed')) {
-    navMain.classList.remove('navigation__list--closed');
-    navMain.classList.add('navigation__list--open');
-  } else {
-    navMain.classList.add('navigation__list--closed');
-    navMain.classList.remove('navigation__list--open');
-  }
-});
+navButton.classList.remove('navigationtoggle--nojs');
+navList.classList.remove('navigationlist--nojs');
+map.classList.remove('contactsmap--nojs');
