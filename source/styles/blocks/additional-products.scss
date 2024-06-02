@@ -1,13 +1,6 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-// .additional-products {
-//   margin-bottom: 40px;
-
-//   @media (min-width: $desktop-width) {
-//     margin-bottom: 96px;
-//   }
-// }
 
 .additional-products__title {
   font-family: $font-secondary;
@@ -20,7 +13,7 @@
     line-height: 32px;
     margin-left: 40px;
     margin-bottom: 80px;
-    margin-top: 72px;
+    margin-top: 77px;
   }
 
   @media (min-width: $desktop-width) {

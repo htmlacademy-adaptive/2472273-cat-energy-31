@@ -22,24 +22,21 @@
 
   <!-- Main-header -->
   <header class="header" data-test="header">
-    <div class="header__container container">
+    <div class="header__container container header__container--nojs">
       <a class="header__logo" href="#">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1200px)" width="70" height="59" srcset="images/logo-picture-desktop.svg">
           <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-picture-tablet.svg">
           <img class="header__logo-picture" src="images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип магазина Кэт Энерджи">
         </picture>
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 768px)" width="101" height="18" srcset="images/logo-text-tablet.svg">
-          <img class="header__logo-text" src="images/logo-header-text.svg" width="101" height="18" alt="Cat Energy">
-        </picture>
+        <img class="header__logo-text" src="images/logo-header-text.svg" width="101" height="18" alt="Cat Energy">
 
       </a>
       <nav class="header__navigation navigation">
-        <button class="navigation__toggle navigation__toggle--closed navigation__toggle--nojs" type="button">
+        <button class="navigation__toggle navigation__toggle--open navigation__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list navigation__list--closed navigation__list--nojs">
+        <ul class="navigation__list navigation__list--open navigation__list--nojs">
           <li class="navigation__list-item">
             <a class="navigation__list-link navigation__list-link--active" href="#">Главная</a>
           </li>
@@ -115,47 +112,44 @@
     <section class="example" data-test="proof">
       <div class="example__wrapper container">
         <h2 class="example__title title-h1">Живой пример</h2>
-        <div class="example__wrapper-content">
-          <div class="example__wrapper-text">
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__list">
-              <div class="example__list-wrapper">
-                <div class="example__item">
-                  <p class="example__item-value">5 КГ</p>
-                  <p class="example__item-text">снижение веса</p>
-                </div>
-                <div class="example__item">
-                  <p class="example__item-value">60 ДНЕЙ</p>
-                  <p class="example__item-text">затрачено времени</p>
-                </div>
+        <div class="example__wrapper-text">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__list">
+            <div class="example__list-wrapper">
+              <div class="example__item">
+                <p class="example__item-value">5 КГ</p>
+                <p class="example__item-text">снижение веса</p>
               </div>
-              <div class="example__total">
-                <span>Затраты на питание:</span>
-                <span>15 000 РУБ.</span>
+              <div class="example__item">
+                <p class="example__item-value">60 ДНЕЙ</p>
+                <p class="example__item-text">затрачено времени</p>
               </div>
             </div>
-          </div>
-          <div class="example__cats">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="images/fat-cat-tablet@1x.webp 1x, images/fat-cat-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="images/fat-cat-mobile@1x.webp 1x, images/fat-cat-mobile@2x.webp 2x" width="280" height="256">
-
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
-              <img class="example__cats-picture example__cats-picture--before" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="images/slim-cat-tablet@1x.webp 1x, images/slim-cat-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="images/slim-cat-mobile@1x.webp 1x, images/slim-cat-mobile@2x.webp 2x" width="280" height="256">
-
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
-              <img class="example__cats-picture example__cats-picture--after" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
-            </picture>
-            <button class="example__cats-button" type="button">
-              <span class="visually-hidden">Показать другого кота</span>
-            </button>
+            <div class="example__total">
+              <span>Затраты на питание:</span>
+              <span>15 000 РУБ.</span>
+            </div>
           </div>
         </div>
+        <div class="example__cats">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/fat-cat-tablet@1x.webp 1x, images/fat-cat-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="images/fat-cat-mobile@1x.webp 1x, images/fat-cat-mobile@2x.webp 2x" width="280" height="256">
 
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
+            <img class="example__cats-picture example__cats-picture--before" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+          </picture>
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/slim-cat-tablet@1x.webp 1x, images/slim-cat-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="images/slim-cat-mobile@1x.webp 1x, images/slim-cat-mobile@2x.webp 2x" width="280" height="256">
+
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
+            <img class="example__cats-picture example__cats-picture--after" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+          </picture>
+          <button class="example__cats-button" type="button">
+            <span class="visually-hidden">Показать другого кота</span>
+          </button>
+        </div>
       </div>
     </section>
     <!-- Contacts -->
@@ -172,7 +166,7 @@
           </address>
         </div>
       </div>
-      <div class="contacts__map">
+      <div class="contacts__map contacts__map--nojs">
         <noscript>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">

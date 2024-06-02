@@ -6,28 +6,19 @@
   font-size: 20px;
   line-height: 20px;
   color: $black;
-  height: 65px;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    height: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 114px;
-  }
 }
 
 .header--catalog {
   border-bottom: 1px solid $border-color-tertiary;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 57px;
   }
 }
 
@@ -48,11 +39,18 @@
   }
 }
 
+.header__container--nojs {
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+  }
+}
+
 .header__logo {
   display: flex;
   text-decoration: none;
-  gap: 56px;
   align-items: center;
+  flex-grow: 1;
+  max-width: calc(100% - 40px);
 
   &:hover {
     opacity: 80%;
@@ -67,6 +65,7 @@
     padding: 0;
     margin: 0;
     gap: 13px;
+    flex-grow: 0;
   }
 
   @media (min-width: $desktop-width) {

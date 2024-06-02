@@ -24,6 +24,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    grid-template-rows: 136px 1fr;
+    column-gap: 224px;
     padding-bottom: 0;
   }
 }
@@ -45,6 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-row: 3/-2;
     margin: 70px 0 75px;
     padding: 0;
   }
@@ -63,6 +68,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-row: 1/2;
     margin-bottom: 76px;
   }
 }
@@ -157,8 +163,9 @@
   line-height: 12px;
   position: absolute;
   left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 115%);
+  bottom: -4px;
+  transform: translate(-50%, 50%);
+  margin: 0;
   text-align: center;
   background-color: $bg-secondary;
 
@@ -167,11 +174,11 @@
     line-height: 14px;
     width: 125px;
     background-color: $white;
+    bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $bg-base;
-    transform: translate(-50%, 142%);
   }
 }
 
@@ -235,9 +242,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    right: 111px;
+    grid-row: -3/-1;
+    max-height: 512px;
   }
 }
 
@@ -264,7 +270,7 @@
 .example__cats-button {
   position: absolute;
   top: 0;
-  left: 140px;
+  left: 50%;
   width: 4px;
   height: 100%;
   padding: 0;
@@ -272,10 +278,6 @@
   border: none;
   border-radius: 2px;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    left: 50%;
-  }
 
   &:hover {
     background-color: $color-primary;
@@ -296,8 +298,8 @@
   border-radius: 50%;
   border: 2px solid $icon-color;
   position: absolute;
-  top: 115px;
-  left: -18px;
+  top: 107px;
+  left: -19px;
 
   @media (min-width: $tablet-width) {
     top: 46%;
@@ -321,8 +323,8 @@
   width: 24px;
   height: 18px;
   position: absolute;
-  top: 126px;
-  left: -10px;
+  top: 119px;
+  left: -12px;
   mask-image: url("../../icons/stack.svg#example-button");
   mask-position: center;
   mask-repeat: no-repeat;

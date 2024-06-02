@@ -28,10 +28,15 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 77px 316px 53px 52px;
+    padding: 75px 316px 53px 52px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 13px;
     width: 570px;
   }
 }
@@ -62,6 +67,7 @@
   height: 53px;
 
   @media (min-width: $tablet-width) {
+    top: 76px;
     right: 63px;
     background-size: 200px 210px;
     width: 200px;
@@ -72,7 +78,7 @@
     background-size: 100px 106px;
     width: 100px;
     height: 106px;
-    top: 41px;
+    top: 38px;
     left: 52px;
     right: auto;
   }
@@ -115,7 +121,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 24px;
+    margin: 0 0 48px;
     padding-left: 0;
     text-align: left;
   }
@@ -127,15 +133,15 @@
 }
 
 .services__card-title--slim {
-  margin: 10px 0 28px 70px;
+  margin: 10px 0 26px 70px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 22px;
+    margin: 0 0 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 33px;
-    margin: 0 0 73px;
+    margin: 0 0 58px;
   }
 }
 
@@ -149,7 +155,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 75px;
-    margin: 0 0 73px;
+    margin: 0 0 59px;
   }
 }
 
@@ -167,6 +173,7 @@
     font-size: 20px;
     line-height: 30px;
     gap: 25px;
+    margin-top: auto;
   }
 }
 
@@ -197,7 +204,7 @@
   border-bottom: 1px solid $border-color-tertiary;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
@@ -205,6 +212,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 13px;
+  }
+}
+
+.services__card--pro .services__card-description {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }
