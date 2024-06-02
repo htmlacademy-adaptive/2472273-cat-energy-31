@@ -1,28 +1,21 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.catalog {
-  @media (min-width: $desktop-width) {
-    margin-top: 47px;
-    margin-bottom: 71px;
-  }
-}
 
 .catalog__title {
   margin: 0;
   color: $black;
-  padding: 27px 0 41px;
+  padding: 27px 0 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding: 0;
-    margin-bottom: 84px;
+    margin-bottom: 86px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 0 0;
     margin-bottom: 84px;
   }
 }
@@ -41,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 63px 80px;
+    gap: 62px 80px;
+    margin-bottom: 71px;
   }
 }

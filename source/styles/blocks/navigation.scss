@@ -10,6 +10,17 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    width: calc(100% - 268px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 745px);
+  }
+}
+
+.navigation--nojs {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
   }
 }
 
@@ -22,15 +33,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     border: none;
-    gap: 36px;
+    gap: 33px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    min-width: 478px;
-    gap: 30px;
+    gap: 32px;
   }
 }
 
@@ -148,22 +157,29 @@
     mask-image: url("../../icons/stack.svg#logo-navigation");
   }
 
-  .navigation--nojs .navigation__toggle {
+  .navigation__toggle--nojs {
     display: none;
   }
 
-  .navigation--nojs .navigation__list {
-    margin-top: 15px;
-    position: static;
-    min-height: 0;
-    background-color: $white;
-  }
-
-  .navigation--nojs .navigation__list-item {
+  .navigation__list--nojs {
     display: block;
+    width: 100%;
+    position: static;
+    margin-top: 13px;
+    background-color: $white;
+    border-top: none;
   }
 
-  .navigation--nojs .navigation__list-link {
+  .navigation__list--nojs .navigation__list-item {
+    display: block;
+    margin: 0 -20px;
+  }
+
+  .navigation__list--nojs .navigation__list-item:first-child {
+    border-top: 1px solid $border-color-tertiary-special;
+  }
+
+  .navigation__list--nojs .navigation__list-link {
     padding: 22px 75px 24px;
     text-align: center;
   }
