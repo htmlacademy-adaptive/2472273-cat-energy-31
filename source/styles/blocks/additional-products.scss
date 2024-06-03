@@ -5,8 +5,8 @@
 .additional-products__title {
   font-family: variables.$font-secondary;
   font-weight: 400;
-  margin: 25px 0 36px;
-  color: $black;
+  margin: 24px 0 36px;
+  color: variables.$black;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 32px;
@@ -19,7 +19,7 @@
   @media (min-width: variables.$desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin: 0 0 80px;
+    margin: 0 0 78px;
   }
 }
 
@@ -53,7 +53,7 @@
 }
 
 .additional-products__list {
-  margin: 0 0 35px;
+  margin: 0 0 34px;
   padding: 0;
   list-style-type: none;
   border-top: 1px solid variables.$border-color-secondary;

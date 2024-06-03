@@ -6,7 +6,7 @@
   position: relative;
 
   @media (min-width: variables.$tablet-width) {
-    color: $black;
+    color: variables.$black;
   }
 }
 

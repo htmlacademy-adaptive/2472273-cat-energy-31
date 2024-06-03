@@ -6,7 +6,7 @@
   border-top: 1px solid variables.$bg-secondary-special;
   margin: 0 -20px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     background: linear-gradient(to bottom, $white 15%, $bg-base 15%);
     padding: 0 37px 40px;
     margin: 0;
@@ -134,7 +134,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    top: 24px;
+    top: 28px;
   }
 }
 

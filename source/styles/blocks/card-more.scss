@@ -2,61 +2,48 @@
 @use "../common/variables.scss";
 
 .card-more {
-  border-bottom: 1px solid variables.$bg-secondary-special;
   margin: 0 -20px;
+  padding-top: 26px;
+  text-align: center;
+  border-bottom: 1px solid variables.$bg-secondary-special;
 
   @media (min-width: variables.$tablet-width) {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    min-width: 324px;
+    min-height: 430px;
     margin: 0;
-    border: none;
+    margin-top: 81px;
+    padding: 50px 35px 38px;
+    justify-content: start;
+    background: variables.$white;
+    border: 2px solid variables.$bg-base;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    padding: 47px 36px 38px;
   }
 }
 
-.card-more__text {
-  @media (min-width: variables.$tablet-width) {
-    padding: 0 38px;
-    margin-bottom: 82px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    margin-bottom: 90px;
-    padding: 0;
-  }
-}
-
-.card-more__text::before {
+.card-more::before {
   content: "";
   display: block;
   background-image: url("../../icons/stack.svg#catalog-card-plus");
   background-position: center;
   background-repeat: no-repeat;
   height: 30px;
+  margin-bottom: 24px;
 
   @media (min-width: variables.$tablet-width) {
     width: 60px;
     height: 60px;
-    transform: translate(55px, -3px);
-    margin-bottom: 48px;
+    margin: 0 auto 50px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    transform: translate(53px, -2px);
     margin-bottom: 39px;
-  }
-}
-
-.card-more__content {
-  margin-bottom: 24px;
-  padding: 24px 20px 0;
-  border-top: 1px solid variables.$bg-secondary-special;
-  text-align: center;
-
-  @media (min-width: variables.$tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 82px 0 0;
-    padding: 50px 37px 38px;
-    border: 2px solid variables.$bg-base;
   }
 }
 
@@ -64,14 +51,15 @@
   font-family: variables.$font-secondary;
   font-size: 16px;
   line-height: 20px;
-  margin: 23px 0 8px;
+  margin: 0 auto 7px;
   color: variables.$secondary-color-text;
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    margin: 0 0 23px;
+    margin: 0 auto 22px;
+    max-width: 150px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -87,7 +75,8 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin: 0;
+    max-width: 170px;
+    margin: 0 auto;
   }
 }
 
@@ -100,5 +89,6 @@
     margin: 0;
     width: 100%;
     padding: 10px 30px;
+    margin-top: auto;
   }
 }

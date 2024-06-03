@@ -67,7 +67,7 @@
   display: block;
   text-align: center;
   padding: 22px 75px 24px;
-  color: $black;
+  color: variables.$black;
   text-decoration: none;
   border-bottom: 1px solid variables.$border-color-tertiary-special;
 
@@ -81,7 +81,7 @@
   @media (min-width: variables.$desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $white;
+    color: variables.$white;
     padding: 18px 0;
   }
 }

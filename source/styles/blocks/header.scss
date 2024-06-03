@@ -55,7 +55,7 @@
 }
 
 .header__container:has(.navigation__list--nojs) {
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: variables.$mobile-width-only) {
     padding-bottom: 0;
   }
 }
