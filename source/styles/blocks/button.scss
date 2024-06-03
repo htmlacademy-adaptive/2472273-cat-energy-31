@@ -6,7 +6,7 @@
   font-family: variables.$font-secondary;
   font-size: 16px;
   line-height: 20px;
-  color: $white;
+  color: variables.$white;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -22,7 +22,7 @@
 
   &:active {
     background-color: variables.$color-secondary;
-    color: $button-color-active;
+    color: variables.$button-color-active;
   }
 
   &:disabled {

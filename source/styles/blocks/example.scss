@@ -4,7 +4,7 @@
 .example {
   background-color: variables.$bg-secondary;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     background: linear-gradient(variables.$white 570px, variables.$bg-secondary 570px);
   }
 

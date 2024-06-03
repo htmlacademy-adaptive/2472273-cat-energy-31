@@ -4,7 +4,6 @@
 .contacts {
   @media (min-width: variables.$desktop-width) {
     position: relative;
-    // height: 400px;
     padding-top: 94px;
     padding-bottom: 105px;
   }
@@ -17,6 +16,10 @@
 
 .contacts--catalog {
   background-color: variables.$bg-base;
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .contacts__text {
@@ -88,6 +91,7 @@
     position: absolute;
     top: 0;
     z-index: -1;
+    height: 100%;
   }
 }
 

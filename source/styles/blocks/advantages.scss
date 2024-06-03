@@ -41,7 +41,7 @@
 .advantages__title {
   margin: 21px 0 39px;
   line-height: 40px;
-  color: $black;
+  color: variables.$black;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
@@ -129,11 +129,6 @@
 .advantages__item--benefit::before {
   background-image: url("../../icons/stack.svg#leaf");
   background-size: 25px 28px;
-
-  @media (min-width: variables.$tablet-width) {
-    font-style: $font-secondary;
-    top: 40;
-  }
 }
 
 .advantages__item::after {
@@ -167,19 +162,11 @@
 .advantages__item--view::before {
   background-image: url("../../icons/stack.svg#glass");
   background-size: 26px 29px;
-
-  @media (min-width: variables.$tablet-width) {
-    top: 40;
-  }
 }
 
 .advantages__item--advice::before {
   background-image: url("../../icons/stack.svg#fork-and-knife");
   background-size: 25px 30px;
-
-  @media (min-width: variables.$tablet-width) {
-    top: 40;
-  }
 }
 
 .advantages__item--result::before {
