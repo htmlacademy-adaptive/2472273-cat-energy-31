@@ -2,7 +2,7 @@
 @use "mixins.scss";
 
 .title-h1 {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;

@@ -8,10 +8,12 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: $base-color-text;
+  color: variables.$base-color-text;
 
-  @media (min-width: $tablet-width) {
-    width: 168px;
+  @media (min-width: variables.$tablet-width) {
+    justify-content: center;
+    gap: 23px;
+    max-width: 168px;
   }
 }
 
@@ -27,14 +29,14 @@
   width: 27px;
   height: 34px;
   display: block;
-  background-color: $icon-color;
+  background-color: variables.$icon-color;
 }
 
 .copyright:hover::after {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
 }
 
 .copyright:active::after {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
   opacity: 30%;
 }

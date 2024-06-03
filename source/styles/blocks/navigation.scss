@@ -2,24 +2,24 @@
 @use "../common/variables.scss";
 
 .navigation {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    width: calc(100% - 268px);
+    max-width: 65%;
   }
 
-  @media (min-width: $desktop-width) {
-    width: calc(100% - 745px);
+  @media (min-width: variables.$desktop-width) {
+    max-width: 39%;
   }
 }
 
 .navigation--nojs {
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: variables.$mobile-width-only) {
     width: 100%;
   }
 }
@@ -28,28 +28,29 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  border-top: 1px solid $border-color-tertiary-special;
+  border-top: 1px solid variables.$border-color-tertiary-special;
+  display: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: flex;
     flex-wrap: wrap;
     border: none;
-    gap: 33px;
+    gap: 0 36px;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 32px;
+  @media (min-width: variables.$desktop-width) {
+    gap: 0 33px;
   }
 }
 
 .navigation__list--open {
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: variables.$mobile-width-only) {
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100vw;
-    background-color: $white;
+    background-color: variables.$white;
     z-index: 2;
   }
 }
@@ -68,16 +69,16 @@
   padding: 22px 75px 24px;
   color: $black;
   text-decoration: none;
-  border-bottom: 1px solid $border-color-tertiary-special;
+  border-bottom: 1px solid variables.$border-color-tertiary-special;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     border: none;
     font-size: 18px;
     line-height: 24px;
     padding: 18px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     font-size: 20px;
     line-height: 30px;
     color: $white;
@@ -86,7 +87,7 @@
 }
 
 .navigation__list--catalog .navigation__list-link {
-  color: $black;
+  color: variables.$black;
 }
 
 .navigation__list-link--active {
@@ -94,25 +95,25 @@
 }
 
 .navigation__list-link--active::after {
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
-    background-color: $color-primary;
+    background-color: variables.$color-primary;
     position: absolute;
     top: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     top: 55px;
-    background-color: $white;
+    background-color: variables.$white;
   }
 }
 
 .navigation__list--catalog .navigation__list-link--active::after {
-  @media (min-width: $desktop-width) {
-    background-color: $color-primary;
+  @media (min-width: variables.$desktop-width) {
+    background-color: variables.$color-primary;
   }
 }
 
@@ -129,22 +130,22 @@
     mask-image: url("../../icons/stack.svg#icon-close");
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: $black;
+    background-color: variables.$black;
     width: 24px;
     height: 24px;
     margin-left: auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     display: none;
   }
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: variables.$mobile-width-only) {
   .navigation__list--closed {
     border: none;
   }
@@ -163,10 +164,9 @@
 
   .navigation__list--nojs {
     display: block;
-    width: 100%;
     position: static;
     margin-top: 13px;
-    background-color: $white;
+    background-color: variables.$white;
     border-top: none;
   }
 
@@ -176,7 +176,7 @@
   }
 
   .navigation__list--nojs .navigation__list-item:first-child {
-    border-top: 1px solid $border-color-tertiary-special;
+    border-top: 1px solid variables.$border-color-tertiary-special;
   }
 
   .navigation__list--nojs .navigation__list-link {

@@ -7,12 +7,12 @@
   gap: 18px;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin-bottom: 49px;
     gap: 33px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     flex-direction: row;
     gap: 80px;
     margin-bottom: 0;
@@ -24,16 +24,16 @@
 .services__card {
   position: relative;
   padding: 21px 33px 18px 20px;
-  background-color: $bg-base;
+  background-color: variables.$bg-base;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     width: 100%;
     padding: 75px 316px 53px 52px;
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr;
     gap: 13px;
@@ -42,14 +42,18 @@
 }
 
 .services__card--slim {
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     padding: 77px 61px 55px 52px;
   }
 }
 
 .services__card--pro {
-  @media (min-width: $desktop-width) {
-    padding: 77px 67px 55px 52px;
+  @media (min-width: variables.$tablet-width) {
+    padding: 76px 316px 53px 52px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 76px 67px 55px 52px;
   }
 }
 
@@ -66,7 +70,7 @@
   width: 50px;
   height: 53px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     top: 76px;
     right: 63px;
     background-size: 200px 210px;
@@ -74,7 +78,7 @@
     height: 210px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     background-size: 100px 106px;
     width: 100px;
     height: 106px;
@@ -91,16 +95,16 @@
   top: 29px;
   left: 12px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     left: auto;
-    top: 97px;
+    top: 94px;
     right: 29px;
     background-size: 268px 200px;
     width: 268px;
     height: 200px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     background-size: 134px 100px;
     width: 134px;
     height: 100px;
@@ -118,7 +122,7 @@
   text-transform: uppercase;
   text-align: left;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 48px;
@@ -126,22 +130,22 @@
     text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     text-align: center;
     padding-left: 33px;
   }
 }
 
 .services__card-title--slim {
-  margin: 10px 0 26px 70px;
+  margin: 7px 0 29px 70px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin: 0 0 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     padding-left: 33px;
-    margin: 0 0 58px;
+    margin: 0 0 59px;
   }
 }
 
@@ -149,27 +153,27 @@
   margin: 12px 0 30px 71px;
 
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin: 0 0 25px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     padding-left: 75px;
     margin: 0 0 59px;
   }
 }
 
 .services__card-link {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 16px;
   line-height: 16px;
-  color: $black;
+  color: variables.$black;
   text-transform: uppercase;
   display: inline-flex;
   gap: 15px;
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 30px;
     gap: 25px;
@@ -188,10 +192,10 @@
   mask-image: url("../../icons/stack.svg#arrow-right");
   width: 60px;
   height: 10px;
-  mask-size: 45px, 12px;
+  mask-size: 39px, 12px;
   mask-repeat: no-repeat;
   mask-position: -8px center;
-  background-color: $black;
+  background-color: variables.$black;
 }
 
 .services__card-link:hover::after {
@@ -201,9 +205,9 @@
 .services__card-description {
   margin: 0 0 18px;
   padding-bottom: 23px;
-  border-bottom: 1px solid $border-color-tertiary;
+  border-bottom: 1px solid variables.$border-color-tertiary;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin-bottom: 52px;
     padding: 0;
     font-size: 16px;
@@ -211,13 +215,13 @@
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 13px;
   }
 }
 
 .services__card--pro .services__card-description {
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 13px;
   }
 }

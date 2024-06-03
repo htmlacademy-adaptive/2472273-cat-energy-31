@@ -13,10 +13,10 @@ html {
 
 body {
   margin: 0;
-  font-family: $font-primary;
+  font-family: variables.$font-primary;
   font-size: 14px;
   line-height: 18px;
-  color: $base-color-text;
+  color: variables.$base-color-text;
 }
 
 img {

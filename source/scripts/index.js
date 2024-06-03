@@ -1,8 +1,10 @@
 /* в этот файл добавляет скрипты*/
-const navButton = document.querySelector('.navigationtoggle');
-const navList = document.querySelector('.navigationlist');
-const map = document.querySelector('.contactsmap');
+const nav = document.querySelector('.navigation');
+const navButton = document.querySelector('.navigation__toggle');
+const navList = document.querySelector('.navigation__list');
+const map = document.querySelector('.contacts__map');
 
-navButton.classList.remove('navigationtoggle--nojs');
-navList.classList.remove('navigationlist--nojs');
-map.classList.remove('contactsmap--nojs');
+nav.classList.remove('navigation--nojs');
+navButton.classList.remove('navigation__toggle--nojs');
+navList.classList.remove('navigation__list--nojs');
+map.classList.remove('contacts__map--nojs');

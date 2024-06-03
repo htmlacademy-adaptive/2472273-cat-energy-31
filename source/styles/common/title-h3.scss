@@ -2,6 +2,6 @@
 @use "mixins.scss";
 
 .title-h3 {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-weight: 400;
 }

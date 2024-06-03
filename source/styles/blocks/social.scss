@@ -8,22 +8,19 @@
   margin: 0 0 20px;
   padding: 0 0 20px;
   list-style-type: none;
-  border-bottom: 1px solid $border-color-tertiary;
+  border-bottom: 1px solid variables.$border-color-tertiary;
+  gap: 24px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     border: none;
     margin: 0;
     margin-left: 41px;
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-left: 37px;
   }
-}
-
-.social__item:not(:last-child) {
-  margin-right: 24px;
 }
 
 .social__link::after {
@@ -33,15 +30,15 @@
   width: 28px;
   height: 22px;
   display: block;
-  background-color: $icon-color;
+  background-color: variables.$icon-color;
 }
 
 .social__link:hover::after {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
 }
 
 .social__link:active::after {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
   opacity: 30%;
 }
 

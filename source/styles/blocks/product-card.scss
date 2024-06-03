@@ -3,7 +3,7 @@
 
 .product-card {
   padding: 20px 20px 25px;
-  border-top: 1px solid $bg-secondary-special;
+  border-top: 1px solid variables.$bg-secondary-special;
   margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
@@ -13,10 +13,10 @@
     border: none;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 27px;
+    gap: 28px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     min-width: 245px;
     padding: 0 38px 40px;
     gap: 32px;
@@ -28,7 +28,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 9px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     border: none;
     grid-template-columns: 1fr;
     padding: 0;
@@ -39,14 +39,14 @@
 .product-card__link {
   place-self: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: block;
     margin: 10px 25px 62px;
     padding-top: 19px;
     height: 172px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin: 10px 0 48px;
     padding: 19px 4px;
     text-align: center;
@@ -54,11 +54,11 @@
 }
 
 .product-card:nth-child(2n) .product-card__link {
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 2px 16px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     padding: 7px 1px;
     height: 196px;
     margin-bottom: 25px;
@@ -66,17 +66,17 @@
 }
 
 .product-card__title {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   text-decoration: none;
   display: block;
   font-size: 16px;
   line-height: 20px;
-  color: $tertiary-color-text;
+  color: variables.$tertiary-color-text;
   text-transform: uppercase;
   padding-right: 64px;
   margin: 0 0 14px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -86,7 +86,7 @@
     width: 135px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     text-align: center;
     display: block;
     padding: 0 15px;
@@ -99,7 +99,7 @@
   font-size: 12px;
   line-height: 16px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
@@ -111,29 +111,29 @@
   justify-content: space-between;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin-bottom: 11px;
   }
 }
 
 .product-card__item:not(:last-child) {
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 13px;
   }
 }
 
 .product-card__item::after {
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     content: "";
     display: block;
     width: 100%;
     height: 1px;
-    background-color: $border-color-secondary;
+    background-color: variables.$border-color-secondary;
     position: absolute;
     top: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     top: 24px;
   }
 }
@@ -148,12 +148,11 @@
   text-align: center;
   padding: 10px 30px;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    margin-top: auto;
+  @media (min-width: variables.$tablet-width) {
+    margin: auto auto 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     width: 169px;
     padding: 10px 40px;
     align-self: center;

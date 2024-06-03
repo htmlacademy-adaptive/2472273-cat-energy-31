@@ -2,10 +2,10 @@
 @use "../common/variables.scss";
 
 .hero {
-  color: $white;
+  color: variables.$white;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     color: $black;
   }
 }
@@ -14,7 +14,7 @@
   text-align: center;
   margin: 27px 0 25px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin: 45px 0 40px;
@@ -22,19 +22,19 @@
     order: -3;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 94px 0 40px;
+  @media (min-width: variables.$desktop-width) {
+    margin: 93px 0 40px;
   }
 }
 
 .hero__wrapper {
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     padding-bottom: 184px;
   }
 }
@@ -56,15 +56,15 @@
       url("../../images/hero-background-mobile@2x.png") type("image/png") 2x
     );
   background-position: center;
-  background-color: $color-primary-special;
+  background-color: variables.$color-primary-special;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     display: block;
     top: -132px;
     right: 0;
@@ -83,14 +83,14 @@
 }
 
 .hero__wrapper-content {
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: flex;
     flex-direction: column;
     max-width: 420px;
     margin-left: 90px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     position: relative;
     margin-left: 79px;
     align-items: start;
@@ -98,13 +98,13 @@
 }
 
 .hero__description {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 29px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -112,7 +112,7 @@
     order: -2;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 52px;
   }
 }
@@ -121,13 +121,13 @@
   display: block;
   margin-bottom: 3px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     max-width: 709px;
     margin-top: -83px;
     margin-left: -89px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     position: absolute;
     left: 100%;
     top: 0;
@@ -141,7 +141,7 @@
   padding: 10px 40px;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 26px;
     width: 244px;
