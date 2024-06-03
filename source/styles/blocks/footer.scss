@@ -2,16 +2,16 @@
 @use "../common/variables.scss";
 
 .footer {
-  background-color: $bg-base;
+  background-color: variables.$bg-base;
 }
 
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 36px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 58px;
@@ -19,7 +19,7 @@
     align-items: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: 69px 25px 66px 30px;
@@ -30,7 +30,7 @@
   display: block;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid $border-color-tertiary;
+  border-bottom: 1px solid variables.$border-color-tertiary;
 
   &::after {
     content: "";
@@ -39,18 +39,18 @@
     mask-image: url("../../icons/stack.svg#logo-text");
     mask-position: center;
     mask-repeat: no-repeat;
-    background-color: $secondary-color-text;
+    background-color: variables.$secondary-color-text;
   }
 
   &:hover::after {
-    background-color: $base-color-text-special;
+    background-color: variables.$base-color-text-special;
   }
 
   &:active::after {
-    background-color: $base-color-text-active;
+    background-color: variables.$base-color-text-active;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     width: 128px;
     padding: 0;
     margin: 0;
@@ -59,13 +59,13 @@
 }
 
 .footer__social {
-  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+  @media ((min-width: variables.$tablet-width) and (min-width: variables.$desktop-width)) {
     width: 132px;
   }
 }
 
 .footer__copyright {
-  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+  @media ((min-width: variables.$tablet-width) and (min-width: variables.$desktop-width)) {
     width: 168px;
   }
 }

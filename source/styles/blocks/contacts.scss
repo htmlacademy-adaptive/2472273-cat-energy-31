@@ -2,8 +2,11 @@
 @use "../common/variables.scss";
 
 .contacts {
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     position: relative;
+    // height: 400px;
+    padding-top: 94px;
+    padding-bottom: 105px;
   }
 }
 
@@ -13,7 +16,7 @@
 }
 
 .contacts--catalog {
-  background-color: $bg-base;
+  background-color: variables.$bg-base;
 }
 
 .contacts__text {
@@ -21,33 +24,30 @@
   grid-template-columns: repeat(2, 1fr);
   min-height: 112px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: 163px 157px;
     justify-content: space-between;
     padding: 60px 39px;
   }
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 97px;
-    min-width: 565px;
+  @media (min-width: variables.$desktop-width) {
+    max-width: 565px;
     min-height: 199px;
-    padding-left: 80px;
-    padding-right: 78px;
-    background-color: $white;
+    padding: 61px 78px 61px 80px;
+    background-color: variables.$white;
   }
 }
 
 .contacts__description {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 16px;
   line-height: 20px;
-  color: $secondary-color-text;
+  color: variables.$secondary-color-text;
   text-transform: uppercase;
   align-self: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 26px;
     margin: 0;
@@ -60,7 +60,7 @@
   font-style: normal;
   align-self: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 20px;
     display: flex;
@@ -70,7 +70,7 @@
     text-align: right;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     text-align: left;
   }
 }
@@ -80,8 +80,14 @@
   height: 362px;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    top: 0;
+    z-index: -1;
   }
 }
 
@@ -91,7 +97,7 @@
   height: 362px;
   object-fit: cover;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     height: 400px;
   }
 }

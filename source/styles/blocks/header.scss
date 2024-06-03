@@ -2,22 +2,37 @@
 @use "../common/variables.scss";
 
 .header {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 20px;
   line-height: 20px;
-  color: $black;
+  color: variables.$black;
   position: relative;
 }
 
-.header--catalog {
-  border-bottom: 1px solid $border-color-tertiary;
+.header--index::before {
+  @media (min-width: variables.$desktop-width) {
+    content: "";
+    display: block;
+    background-color: variables.$color-primary;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    z-index: -3;
+    background-size: cover;
+  }
+}
 
-  @media (min-width: $tablet-width) {
+.header--catalog {
+  border-bottom: 1px solid variables.$border-color-tertiary;
+
+  @media (min-width: variables.$tablet-width) {
     margin-bottom: 45px;
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-bottom: 57px;
   }
 }
@@ -28,18 +43,18 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 13px;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding-top: 21px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     padding-top: 52px;
   }
 }
 
-.header__container--nojs {
+.header__container:has(.navigation__list--nojs) {
   @media (max-width: $mobile-width-only) {
     padding-bottom: 0;
   }
@@ -51,6 +66,7 @@
   align-items: center;
   flex-grow: 1;
   max-width: calc(100% - 40px);
+  gap: 6px;
 
   &:hover {
     opacity: 80%;
@@ -60,7 +76,7 @@
     opacity: 60%;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     width: 174px;
     padding: 0;
     margin: 0;
@@ -68,7 +84,7 @@
     flex-grow: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     width: 202px;
   }
 }
@@ -77,11 +93,11 @@
 .header__logo-text {
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     margin: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin: 0;
     width: 118px;
   }

@@ -6,8 +6,8 @@
   line-height: 24px;
   position: relative;
   width: fit-content;
-  background-color: $white;
-  box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
+  background-color: variables.$white;
+  box-shadow: -40px 0 0 0 variables.$white, 40px 0 0 0 variables.$white;
 }
 
 .title-with-line::before {
@@ -17,11 +17,15 @@
   right: 0;
   width: 100vw;
   height: 2px;
-  background-color: $color-primary;
-  box-shadow: 100vw 0 0 0 $color-primary;
+  background-color: variables.$color-primary;
+  box-shadow: 100vw 0 0 0 variables.$color-primary;
   z-index: -1;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$tablet-width) {
+    top: 15px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
     top: 17px;
   }
 }

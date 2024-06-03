@@ -2,21 +2,21 @@
 @use "../common/variables.scss";
 
 .subscribe__title {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   margin: 0 0 32px;
   text-align: left;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 32px;
     line-height: 32px;
     margin-left: 40px;
     margin-bottom: 65px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     font-size: 40px;
     line-height: 40px;
     margin: 0 0 72px;
@@ -24,26 +24,26 @@
 }
 
 .subscribe__content {
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 0 68px;
   }
 }
 
 .subscribe__description {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 24px;
   color: $black;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 24px;
     line-height: 32px;
     text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin: 0 0 21px;
   }
 }
@@ -51,45 +51,45 @@
 .subscribe__form {
   margin-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     justify-content: center;
     margin-bottom: 104px;
   }
 }
 
 .subscribe__input {
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 20px;
   line-height: 30px;
-  color: $base-color-text;
+  color: variables.$base-color-text;
   text-transform: uppercase;
   width: 100%;
   margin-bottom: 16px;
   padding: 12px;
-  border: 1px solid $border-color-secondary;
+  border: 1px solid variables.$border-color-secondary;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     width: 376px;
     margin: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     width: 496px;
   }
 
   &:hover {
-    border-color: $border-color-secondary;
+    border-color: variables.$border-color-secondary;
   }
 
   &:focus {
-    border-color: $base-color-text;
-    outline: 2px solid $base-color-text;
+    border-color: variables.$base-color-text;
+    outline: 2px solid variables.$base-color-text;
     outline-offset: -2px;
   }
 
@@ -99,8 +99,8 @@
 }
 
 .subscribe__input--error {
-  border-color: $color-error;
-  outline: 2px solid $color-error;
+  border-color: variables.$color-error;
+  outline: 2px solid variables.$color-error;
   outline-offset: -2px;
 }
 
@@ -111,7 +111,7 @@
   width: 100%;
   padding: 15px 70px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     width: 256px;
   }
 }

@@ -3,7 +3,7 @@
 
 .button {
   display: inline-block;
-  font-family: $font-secondary;
+  font-family: variables.$font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $white;
@@ -14,14 +14,14 @@
 }
 
 .button--primary {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
 
   &:hover {
-    background-color: $color-secondary;
+    background-color: variables.$color-secondary;
   }
 
   &:active {
-    background-color: $color-secondary;
+    background-color: variables.$color-secondary;
     color: $button-color-active;
   }
 
@@ -31,15 +31,15 @@
 }
 
 .button--secondary {
-  background-color: $bg-base;
-  color: $base-color-text;
+  background-color: variables.$bg-base;
+  color: variables.$base-color-text;
 
   &:hover {
-    background-color: $bg-secondary-special;
+    background-color: variables.$bg-secondary-special;
   }
 
   &:active {
-    background-color: $bg-secondary-special;
+    background-color: variables.$bg-secondary-special;
   }
 
   &:disabled {
