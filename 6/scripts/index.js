@@ -1,0 +1,1 @@
+var t=document.querySelector(".navigation"),o=document.querySelector(".navigation__toggle"),n=document.querySelector(".navigation__list"),e=document.querySelector(".contacts__map");t.classList.remove("navigation--nojs");o.classList.remove("navigation__toggle--nojs");n.classList.remove("navigation__list--nojs");e.classList.remove("contacts__map--nojs");
